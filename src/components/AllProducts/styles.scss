@@ -1,0 +1,29 @@
+.all-products {
+  list-style: none;
+  width: 900px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin: 10px auto;
+}
+
+.search-input {
+  height: 35px;
+  width: 200px;
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+  box-shadow: 0.5px 0.5px 0.5px 1px #999;
+  margin: 5px calc(50% - 100px);
+
+  &:focus-visible {
+    outline: thin solid #888;
+  }
+}
+
+@media (max-width: 899px) {
+  .all-products {
+    grid-template-columns: repeat(1, 1fr);
+    width: 350px;
+  }
+}
