@@ -1,9 +1,10 @@
+import React from 'react'
 import './styles.scss'
 
 const LoaderSpinner = () => {
-  return(
+  return (
     <div className="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
   )
 }
 
-export default LoaderSpinner;
+export default LoaderSpinner

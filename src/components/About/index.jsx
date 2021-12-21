@@ -1,12 +1,12 @@
-import React from 'react';
-import {Link} from 'react-router-dom'
-import { useEffect } from 'react/cjs/react.development';
+import React from 'react'
+import { Link } from 'react-router-dom'
+import { useEffect } from 'react/cjs/react.development'
 
-const About =()=>{
-  useEffect(()=>{
+const About = () => {
+  useEffect(() => {
 
-  },[])
-  return(
+  }, [])
+  return (
     <>
       <h2>About</h2>
       <p>This is challenge webpage, for practice all learned in the program TOP of Make It Real Camp.</p>
@@ -21,7 +21,6 @@ const About =()=>{
       <Link to='/'>Go To Home</Link>
     </>
   )
-
 }
 
-export default About;
+export default About

@@ -1,18 +1,17 @@
-import React from 'react';
-import { useParams } from 'react-router-dom';
+import PropTypes from 'prop-types'
+import React from 'react'
+import { useParams, Link } from 'react-router-dom'
 import './styles.scss'
-import {Link} from 'react-router-dom'
 
-const ProductDetail = ({data}) =>{
-  const {productId} = useParams()
+const ProductDetail = ({ data }) => {
+  const { productId } = useParams()
 
-  const product = data.find(product=>product.id === Number(productId))
+  const product = data.find(product => product.id === Number(productId))
 
+  const { image, title, category, description, price, rating } = product
+  const { rate, count } = rating
 
-  const {image,title,category,description,price,rating} = product;
-  const {rate,count} = rating;
-
-  return(
+  return (
     <>
       <section className="product-wrapper">
         <figure className="product-wrapper__figure">
@@ -34,7 +33,10 @@ const ProductDetail = ({data}) =>{
       <Link to="/" className="back">Back</Link>
     </>
   )
-
 }
 
-export default ProductDetail;
+ProductDetail.propTypes = {
+  data: PropTypes.array
+}
+
+export default ProductDetail
