@@ -11,5 +11,5 @@ export const ItemContextProvider = ({ children }) => {
 }
 
 ItemContextProvider.propTypes = {
-  children: PropTypes.element
+  children: PropTypes.array
 }

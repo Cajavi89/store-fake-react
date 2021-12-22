@@ -20,6 +20,7 @@ const AllProducts = () => {
   }
   return (
     <>
+      <h1>Super Store</h1>
       <form>
         <input
           type="text"

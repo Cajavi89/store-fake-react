@@ -1,0 +1,24 @@
+.about-wrapper {
+  padding: 30px;
+  height: 86.6vh;
+
+  &__title {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  &__list {
+    list-style: square;
+    padding-left: 40px;
+    margin-top: 15px;
+    margin-bottom: 50px;
+  }
+
+  &__button {
+    margin-top: 25px;
+    background-color: tomato;
+    color: white;
+    padding: 7px;
+    text-decoration: none;
+  }
+}
