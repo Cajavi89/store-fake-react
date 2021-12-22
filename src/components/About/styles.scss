@@ -21,4 +21,34 @@
     padding: 7px;
     text-decoration: none;
   }
+
+  &__info-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    &__name-and-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+
+      &--name {
+        font-size: 30px;
+        font-weight: 700;
+      }
+    }
+
+    &__picture {
+      &--image {
+        width: 180px;
+        height: auto;
+        min-height: 230px;
+        min-width: 230px;
+        border-radius: 50%;
+        position: static;
+      }
+    }
+  }
 }

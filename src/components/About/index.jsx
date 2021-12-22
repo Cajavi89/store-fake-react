@@ -1,6 +1,6 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import './styles.scss'
+import picture from '../../assets/images/miFoto.png'
 
 const About = () => {
   return (
@@ -15,7 +15,16 @@ const About = () => {
         <li>Concepts to work with Git and GitHub</li>
       </ul>
 
-      <Link className='about-wrapper__button' role='button' to='/'>Go To Home</Link>
+      <section className='about-wrapper__info-wrapper'>
+        <section className='about-wrapper__info-wrapper__name-and-info'>
+          <article className='about-wrapper__info-wrapper__name-and-info--name'>Carlos Jaramillo</article>
+          <article className='about-wrapper__info-wrapper__name-and-info--github'>
+            <a href={'https://github.com/Cajavi89'} target={'_blank'} rel="noreferrer">https://github.com/Cajavi89 </a></article>
+        </section>
+        <figure className='about-wrapper__info-wrapper__picture'>
+          <img className='about-wrapper__info-wrapper__picture--image' src={picture} alt='picture of Carlos Jaramillo' />
+        </figure>
+      </section>
     </section>
   )
 }
