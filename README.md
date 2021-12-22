@@ -1,6 +1,6 @@
 # Practice challenge with ReactJS
 
-This site can be watched here: [Fake Store](https://github.com/facebook/create-react-app).
+This site can be watched here: [Fake Store](https://fake-store-cajavi.netlify.app/).
 
 ## How see it in your desktop
 
