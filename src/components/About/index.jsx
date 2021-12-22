@@ -1,12 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { useEffect } from 'react/cjs/react.development'
 import './styles.scss'
 
 const About = () => {
-  useEffect(() => {
-
-  }, [])
   return (
     <section className='about-wrapper'>
       <h2 className='about-wrapper__title'>About</h2>
